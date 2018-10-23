@@ -18,8 +18,8 @@ import android.view.ViewGroup
 abstract class SimpleRecAdapter<T,F:RecyclerView.ViewHolder>(context:Context): BaseRecAdapter<T, F>(context) {
 
 
-    override fun onCreateViewHolder(parent: ViewGroup?, viewType: Int): F {
-        val view = LayoutInflater.from(parent!!.context).inflate(getLayoutId(),parent,false)
+    override fun onCreateViewHolder(p0: ViewGroup, p1: Int): F {
+        val view = LayoutInflater.from(p0!!.context).inflate(getLayoutId(),p0,false)
         return newViewHolder(view)
     }
     abstract fun getLayoutId():Int
