@@ -8,10 +8,10 @@ import android.view.View;
 
 import com.juyao.jmvp.Config;
 import com.juyao.jmvp.kit.KnifeKit;
-import com.tbruyelle.rxpermissions.RxPermissions;
-import com.trello.rxlifecycle.components.support.RxAppCompatActivity;
 
 import butterknife.Unbinder;
+import com.tbruyelle.rxpermissions2.RxPermissions;
+import com.trello.rxlifecycle2.components.support.RxAppCompatActivity;
 
 /**
  * Created by juyao on 2017/11/23.
@@ -77,7 +77,7 @@ public abstract class JActivity<P extends IPresent> extends RxAppCompatActivity 
 
     @Override
     protected void onPause() {
-        super.onPause();
+       super.onPause();
         getvDelegate().pause();
     }
 

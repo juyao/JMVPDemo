@@ -4,16 +4,17 @@ import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v4.app.FragmentActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import com.juyao.jmvp.Config;
 import com.juyao.jmvp.kit.KnifeKit;
-import com.tbruyelle.rxpermissions.RxPermissions;
-import com.trello.rxlifecycle.components.support.RxFragment;
 
 import butterknife.Unbinder;
+import com.tbruyelle.rxpermissions2.RxPermissions;
+import com.trello.rxlifecycle2.components.RxFragment;
 
 /**
  * Created by wanglei on 2016/12/29.
@@ -106,7 +107,7 @@ public abstract class JFragment<P extends IPresent> extends RxFragment implement
     }
 
     protected RxPermissions getRxPermissions() {
-        rxPermissions = new RxPermissions(getActivity());
+        rxPermissions = new RxPermissions((FragmentActivity) getActivity());
         rxPermissions.setLogging(Config.Companion.getDEV());
         return rxPermissions;
     }
