@@ -14,7 +14,8 @@ import com.juyao.jmvp.kit.KnifeKit;
 
 import butterknife.Unbinder;
 import com.tbruyelle.rxpermissions2.RxPermissions;
-import com.trello.rxlifecycle2.components.RxFragment;
+import com.trello.rxlifecycle2.components.support.RxFragment;
+
 
 /**
  * Created by wanglei on 2016/12/29.
