@@ -2,7 +2,8 @@ package com.juyao.jmvp.utils;
 
 
 
-import com.juyao.jmvp.klog.KLog;
+
+import com.socks.library.KLog;
 
 import java.text.DateFormat;
 import java.text.DecimalFormat;
